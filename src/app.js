@@ -46,7 +46,7 @@ function App(){
         <nav className="navbar">Todoist - A task keeping app</nav>
         <div className="container">
             <form className="form-element" onSubmit={showTasks}>
-                <input className="input-box" placeholder="Enter the task here." value={task} onChange={changeHandler}></input>
+                <input className="input-box" placeholder="Enter the task here." value={task} onChange={changeHandler} required></input>
                 <button className="add-btn">Add</button>
             </form>
             <div className="show-tasks">

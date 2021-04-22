@@ -14,8 +14,8 @@ function ShowTask({id,task,status}){
     }
     return(
         <div className="task">
-                <p>{task}</p>
-                <p>{
+                <p className="task-name">{task}</p>
+                <p className="status">{
                     status?"In Progress 🏋️‍♀️":"Completed ✅"
                 
                 }</p>
