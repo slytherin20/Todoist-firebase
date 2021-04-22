@@ -52,7 +52,7 @@ function App(){
             <div className="show-tasks">
                 {
                     allTasks.map((task)=>{
-                        return <ShowTask key={task.id} task={task.task} status={task.inProgress}/>
+                        return <ShowTask key={task.id} id={task.id} task={task.task} status={task.inProgress}/>
                     })
                 }
             </div>
