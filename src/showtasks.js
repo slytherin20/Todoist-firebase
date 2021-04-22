@@ -1,14 +1,16 @@
-import react from "react";
+import React from "react";
 
-function ShowTask(task){
+function ShowTask({task,status}){
     return(
         <div className="task">
-            {   <>
-                <p>{task.task}</p>
-                <span>{task.inProgress}</span>
+                <p>{task}</p>
+                <p>{
+                    status?"In Progress 🏋️‍♀️":"Completed ✅"
+                
+                }</p>
+                <button className="Done">Done ✅</button>
+                <button className="Delete">Delete 🗑️</button>
 
-                </>
-            }
         </div>
     )
 }

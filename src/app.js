@@ -1,4 +1,5 @@
-import React, { useState , useEffect } from "react";
+import React, { useState} from "react";
+import { useEffect } from "react";
 import firebase from "firebase";
 import db from "./firebase_config";
 import ShowTask from "./showtasks";
@@ -51,7 +52,7 @@ function App(){
             <div className="show-tasks">
                 {
                     allTasks.map((task)=>{
-                        <ShowTask task={task}/>
+                        return <ShowTask key={task.id} task={task.task} status={task.inProgress}/>
                     })
                 }
             </div>
