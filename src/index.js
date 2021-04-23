@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { App }  from "./app";
+import App  from "./app";
 import firebase from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./firebase_config";

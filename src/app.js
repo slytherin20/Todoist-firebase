@@ -9,9 +9,8 @@ import { auth } from "./firebase_config";
 function App(){
     let [task,setTask] = useState("");
     const [allTasks,setAllTasks] = useState([]);
-    //const userId = auth.currentUser.uid;
+    const userId = auth.currentUser.uid;
 
-    console.log(userId)
     useEffect(() => {
         getTodos();
     }, [])  //[] stays blank to launch only on first launch of app.
