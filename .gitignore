@@ -70,7 +70,5 @@ dist/
 .eslintrc.json
 .prettierrc
 src/firebase_config.js
-.firebaserc
-firebase.json
-firestore.indexes.json
-firestore.rules
+app.js
+app.js.map
