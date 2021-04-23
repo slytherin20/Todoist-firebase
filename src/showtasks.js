@@ -1,16 +1,15 @@
 import React from "react";
 import db from "./firebase_config";
 
-
-function ShowTask({id,task,status}){
+function ShowTask({id,task,status,userId}){
 
     function toggleDoneButton(){
-        db.collection("todos").doc(id).update({
+        db.collection(userId).doc(id).update({
             inProgress:!status
         })
     }
     function deleteTask(){
-        db.collection("todos").doc(id).delete();
+        db.collection(userId).doc(id).delete();
     }
     return(
         <div className="task">

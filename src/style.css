@@ -41,7 +41,7 @@
     cursor: pointer;
 
 }
-.add-btn:hover{
+.add-btn:hover,.signin:hover,.signout:hover{
     transform: scale(1.1);
 }
 .input-box{
@@ -74,4 +74,16 @@
 }
 .Done:hover,.Delete:hover{
     border:solid 1px black;
+}
+.signin,.signout{
+    width:200px;
+    background-color: black;
+    color:white;
+    border:none;
+    margin: 20px;
+    font-size: 15px;
+    padding:5px;
+    float:right;
+    border-radius: 15;
+    cursor: pointer;
 }
